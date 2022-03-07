@@ -47,8 +47,6 @@
         font-size: 12px;
         color: red;
         text-align: center;
-        
-
     }
 
 
@@ -64,9 +62,6 @@
         
         font-family: nunito, sans-serif;
         text-align: center;
-
-        
-
     }
 
     .container{
@@ -82,13 +77,27 @@
 
     }
 
-    /* responsividade 720x */
+    /* Responsividade */
+    @media screen and (max-width: 700px){
+        
+        .Image{
+        width:60%;
+        margin-left: 20%;
+        margin-top: 20%;  
+        margin-bottom: 10%;  
+        }
 
-
-
+        .text2{
+            font-size: 12px;
+            margin-bottom: 7%;
+        }
+        .text-inf{
+            font-size: 8px;
+            margin: 1% 5% 2% 5%;
+        }
+    }
     </style>
-
-
+    <!-- Fim do CSS -->
 
 </head>
 <body>
@@ -100,20 +109,20 @@
     <div id="container">
 
         <!-- texto de falta de pagamento -->
-        <h2>Não identificamos o pagamento da sua fatura,<br> 
+        <h2 class="text2">Não identificamos o pagamento da sua fatura,<br> 
             por favor entre em contato para regularizar sua situação.
         </h2>
 
         <!-- Texto de direcionamento para WhatsApp Sua Fibra -->
 
         <h5 class="text-inf">Entre em contato conosco através do nosso numero do 
-            WhatsApp 
+            WhatsApp <br>
             <a href="https://api.whatsapp.com/send?phone=5562998486653&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
                 (62) 99848-6653</a></h5> 
         
             <!-- Texto de direcionamento para WhatsApp Cobrança -->
                 
-        <h5>Ou com nossa central de soluções financeiras 
+        <h5 class="text-inf">Ou com nossa central de soluções financeiras <br>
             <a href="https://api.whatsapp.com/send?phone=5562996534928&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
                 (62) 99653-4928
             </a>
