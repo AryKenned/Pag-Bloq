@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de bloqueio</title>
 
+
+    <!-- CSS dentro da do head devido os parametros aceitos no IXC -->
     <style type="text/css">
 
 *, 
@@ -17,35 +19,52 @@
     text-decoration: none;
 }
 
+    body{
+        background-color: black;
+
+    }
+
+
     h2{
         font-family: nunito, sans-serif;
-        text-decoration: none solid rgb(122, 122, 122);
+        color: white;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom:30px;
+        display: -ms-grid;
         display: grid;
     }
 
-    h5{
-        display: grid;
-        grid;
 
+    h5{
+        color: white;
+        text-align:center;
     }
 
     a{
-        border: 1px solid;
+    
         font-family: nunito, sans-serif;
         font-size: 12px;
-        font-style: initial;
         color: red;
         text-align: center;
-        display: grid;
-        grid-auto-rows: repeat(3,1fr);
+        
 
     }
 
+
+    a:hover{
+        transition-duration: 0.6s;
+        font-size:15px;
+        color: rgb(255, 251, 0);
+         
+
+
+
+    }
+
+
     .text-inf{
-        color: red;
+        
         font-family: nunito, sans-serif;
         text-align: center;
 
@@ -54,7 +73,7 @@
     }
 
     .container{
-        margin: 10px;
+        margin: 50px;
 
     }
 
@@ -72,11 +91,15 @@
             por favor entre em contato para regularizar sua situação.</h2>
 
         <h5 class="text-inf">Entre em contato conosco através do nosso numero do 
-            WhatsApp (62) 9984-99262</h5> 
-        <h5>Ou com nossa central de soluções financeiras</h5> 
-        <a href="https://api.whatsapp.com/send?phone=5562996534928&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">(62) 99653-4928</a>
+            WhatsApp 
+            <a href="https://api.whatsapp.com/send?phone=5562998486653&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
+                (62) 99848-6653</a></h5> 
+            
+        <h5>Ou com nossa central de soluções financeiras 
+            <a href="https://api.whatsapp.com/send?phone=5562996534928&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
+                (62) 99653-4928</a></h5> 
+    </div>
 </body>
-
 
 
 </html>
