@@ -19,10 +19,14 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow: hidden;
 }
 
     body{
         background-color: black;
+        /* background-image: url(../img/sem-wi-fi.png);  */
+
+        
 
     }
 
@@ -77,8 +81,52 @@
 
     }
 
+    .Image2{
+        width: 500px;
+        height: 500px;
+  /* background-color: red; */
+        position: relative;
+        top:1000px;
+        left: 0%;
+
+        /* align-items: center; */
+        animation-name: corrida;
+        animation-duration: 30s;
+        animation-iteration-count: 30;
+        animation-direction: alternate;
+    }
+
+
+    @keyframes corrida {
+        0%   {left:0px; top:1900px;}
+        5%  {left:100px; top:0px;}
+        10%  {left:500px; top:50px;}
+        20%  {left:300px; top:-20px;}
+        30% {left:750px; top:100px;}
+        40%   {left:1000px; top:0px;}
+        45%  {left:700px; top:-10px;}
+        50%  {left:500px; top:-50px;}
+        60%  {left:0px; top:0px;}
+        65% {left:1000px; top:-100px;}
+        70%  {left:500px; top:100px;}
+        75%  {left:300px; top:100px;}
+        85%  {left:0px; top:100px;}
+        100% {left:900px; top:900px;}
+
+    }
+
+
+    @keyframes teste {
+        0%   {left:0px; top:0px;}
+        25%  {left:500px; top:0px;}
+        50%  {left:200px; top:200px;}
+        75%  {left:0px; top:500px;}
+        100% {left:0px; top:0px;}
+    }
+
+
     /* Responsividade */
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 500px){
         
         .Image{
         width:60%;
@@ -129,6 +177,8 @@
         </h5> 
 
     </div>
+
+    <img class="Image2" src="../img/sem-wi-fi.png"></img>
 
 
 
