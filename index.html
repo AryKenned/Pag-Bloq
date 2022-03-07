@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de bloqueio</title>
 
+    <link rel="shortcut icon" href="/img/Logo preta_SF" type="image/x-icon" />
+
 
     <!-- CSS dentro da do head devido os parametros aceitos no IXC -->
     <style type="text/css">
@@ -13,7 +15,7 @@
 *, 
 *:after,
 *:before {
-    margin: 0;
+    margin: 0.2rem;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -26,13 +28,11 @@
 
 
     h2{
+        
         font-family: nunito, sans-serif;
-        color: white;
+        color: #ffbb00e8;
         text-align: center;
-        margin-top: 30px;
-        margin-bottom:30px;
-        display: -ms-grid;
-        display: grid;
+        margin: 1% 5% 2% 5%;
     }
 
 
@@ -56,12 +56,9 @@
         transition-duration: 0.6s;
         font-size:15px;
         color: rgb(255, 251, 0);
-         
-
-
+        box-shadow: 5px,5px,5px, rgba(253, 253, 253, 0.5);
 
     }
-
 
     .text-inf{
         
@@ -73,9 +70,20 @@
     }
 
     .container{
-        margin: 50px;
+        /* margin-top: 10px; */
+    }
+
+    .Image{
+
+        width:30%;
+        margin-left: 35%;
+        /* color:aqua; */
+        /* border: 1px solid; */
 
     }
+
+    /* responsividade 720x */
+
 
 
     </style>
@@ -85,20 +93,36 @@
 </head>
 <body>
 
+    <!-- Logo Sua Fibra -->
+    <img class="Image"src="../img/2.png"></img>
+
 
     <div id="container">
-        <h2>Não identificamos o pagamento da sua fatura, 
-            por favor entre em contato para regularizar sua situação.</h2>
+
+        <!-- texto de falta de pagamento -->
+        <h2>Não identificamos o pagamento da sua fatura,<br> 
+            por favor entre em contato para regularizar sua situação.
+        </h2>
+
+        <!-- Texto de direcionamento para WhatsApp Sua Fibra -->
 
         <h5 class="text-inf">Entre em contato conosco através do nosso numero do 
             WhatsApp 
             <a href="https://api.whatsapp.com/send?phone=5562998486653&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
                 (62) 99848-6653</a></h5> 
-            
+        
+            <!-- Texto de direcionamento para WhatsApp Cobrança -->
+                
         <h5>Ou com nossa central de soluções financeiras 
             <a href="https://api.whatsapp.com/send?phone=5562996534928&text=Ol%C3%A1%2C%20gostaria%20de%20resolver%20minha%20situa%C3%A7%C3%A3o." target="_blank">
-                (62) 99653-4928</a></h5> 
+                (62) 99653-4928
+            </a>
+        </h5> 
+
     </div>
+
+
+
 </body>
 
 
